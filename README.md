@@ -9,7 +9,9 @@ Rails version : 5.2.0
 ## Gem
 
 gem bcrypt, 3.1.12
+<br>
 gem bootstrap-sass, 3.3.7
+<br>
 gem jquery-rails, 4.3.1
 
 ## lien heroku 
