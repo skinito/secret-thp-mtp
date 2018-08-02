@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       remember user
       redirect_to user
     else
-      flash.now[:danger] = 'hey login-toi pour y accéder'
+      flash.now[:danger] = 'Mot de passe ou email incorrect'
       render 'new'
     end
   end
