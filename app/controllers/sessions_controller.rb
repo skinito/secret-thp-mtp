@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to user
     else
-      flash.now[:danger] = 'ca marche pas'
+      flash.now[:danger] = 'hey login-toi pour y accéder'
       render 'new'
     end
   end
