@@ -3,9 +3,14 @@
 <h1>J'ai un secret.</h1>
 <h2> As tu envie de la savoir ?</h2>
 
-
+<% if current_user %>
 <div class="secret">
-  <a href="/users/new">
+  <%= link_to image_tag('https://assets2.bigthink.com/system/idea_thumbnails/49505/size_1024/sher.jpg?1361921430'), current_user %>
+</div>
+
+<% else %>
+<div class="secret">
+  <a href="login">
   <img src="https://assets2.bigthink.com/system/idea_thumbnails/49505/size_1024/sher.jpg?1361921430" alt="" class="img-responsive center-block">
   </a>
 </div>
@@ -15,3 +20,4 @@
     <%= link_to 'Be a Member ? Sign in Here ', new_user_path %>
   </div>
 </div>
+<% end %>
