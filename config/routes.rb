@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-  get '*path' => redirect('/login')
+  get '*path' => redirect { |p, req| req.flash[:error] = "Bien tenté mais pour voir le secret log toi 😉"; '/login' }
 
 
 end
