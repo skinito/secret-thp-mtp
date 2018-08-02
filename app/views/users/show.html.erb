@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Super, tu vas découvrir notre secret</h1>
+<% if current_user %>
 
-<h2> Tu es à un click du secret</h2>
-<h3><a href="https://www.thehackingproject.org"> 🎁</a></h3>
-
-
-<h4 style='margin-top:25%;'>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</h4>
-
-
-
-<h4>
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
-</h4>
+  <h1>Super, tu vas découvrir notre secret</h1>
+    <h2> Tu es à un click du secret</h2>
+      <h3><a href="https://www.thehackingproject.org"> 🎁</a></h3>
+        <h4 style='margin-top:25%;'>
+          <strong>Email:</strong>
+          <%= @user.email %>
+        </h4>
+        <h4>
+          <%= link_to 'Edit', edit_user_path(@user) %> |
+          <%= link_to 'Back', users_path %> |
+        </h4>
+<% else %>
+  <h1> ☠️ Bien tenté mais il faut être membre pour voir la page secrete ☠️</h1>
+    <h4><%= link_to "C'est par ici l'inscription 😘", signup_path %></h4>
+<% end %>

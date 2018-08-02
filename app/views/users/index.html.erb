@@ -1,33 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Secret</h1>
-<h2>MPT</h2>
+<h1>J'ai un secret.</h1>
+<h2> As tu envie de la savoir ?</h2>
+
+
+<div class="secret">
+  <a href="/users/new">
+  <img src="https://assets2.bigthink.com/system/idea_thumbnails/49505/size_1024/sher.jpg?1361921430" alt="" class="img-responsive center-block">
+  </a>
+</div>
+
 <div class="text-center">
   <div class="mb-3">
     <%= link_to 'Be a Member ? Sign in Here ', new_user_path %>
   </div>
-</div>
-<!--
-<table>
-  <thead>
-    <tr>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.email %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
--->
-<div class="secret">
-  <img src="https://assets2.bigthink.com/system/idea_thumbnails/49505/size_1024/sher.jpg?1361921430" alt="" class="img-responsive center-block">
 </div>
