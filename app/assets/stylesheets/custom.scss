@@ -26,6 +26,7 @@ textarea {
 /* typography */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  text-align: center;
 }
 
 h1 {
@@ -99,4 +100,9 @@ p {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* images secret */
+.img-responsive .centree {
+ margin: 0 auto;
 }
