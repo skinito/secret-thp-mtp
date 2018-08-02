@@ -1,24 +1,26 @@
-# README
+# The THP project name : Secret
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Configuration ruby & Rails
 
-Things you may want to cover:
+Ruby version : 2.5.1
+<br>
+Rails version : 5.2.0
 
-* Ruby version
+## Gem
 
-* System dependencies
+gem bcrypt, 3.1.12
+<br>
+gem bootstrap-sass, 3.3.7
+<br>
+gem jquery-rails, 4.3.1
+<br>
+gem faker
 
-* Configuration
+## lien heroku 
 
-* Database creation
+```sh
+https://secret-thp-mtp.herokuapp.com
+```
 
-* Database initialization
+## The focus of the project is to create a user session. 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
